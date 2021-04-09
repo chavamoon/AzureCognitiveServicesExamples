@@ -8,10 +8,9 @@ class ComputerVisionClient:
     :param str api_key: Speech service API Key ...
     :param str endpoint: Speech service endpoint ...
     '''
-    def __init__(self, api_key, endpoint, language):
+    def __init__(self, api_key, endpoint):
         api_key = api_key
         endpoint = endpoint
-        language = language
-        credentials = CognitiveServicesCredentials(apikey)
+        credentials = CognitiveServicesCredentials(api_key)
         self.Service =  vision_services.ComputerVisionClient(endpoint, credentials)
 
