@@ -14,3 +14,4 @@ class Speech2TextClient:
         language = language
         speech_config = speech_service.SpeechConfig(subscription=api_key,endpoint=endpoint,speech_recognition_language=language)
         self.Service =  speech_service.SpeechRecognizer(speech_config=speech_config) 
+
